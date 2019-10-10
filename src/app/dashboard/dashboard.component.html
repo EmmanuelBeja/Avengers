@@ -1,0 +1,25 @@
+<section class="header">
+  <app-hero-search></app-hero-search>
+  <span class="heading"> Avengers </span>
+</section>
+
+<section class="about">
+  <div class="about-title">
+    <img src="../../assets/images/avengers-icon.png" height="400" alt="">
+  </div>
+  <div class="about-pages" >
+    <a *ngFor="let hero of heroes" class="col-1-4"
+        routerLink="/detail/{{hero.id}}">
+        <div class="about-card" [style.background-color]="hero ? hero.color : 'light-gray'">
+          <div class="avatar">
+            <img src={{hero.image_url}} alt="">
+          </div>
+          <div class="portfolio">
+            <h2>{{hero.name}}</h2>
+            <p>{{hero.about}}</p>
+          </div>
+        </div>
+    </a>
+  </div>
+
+</section>

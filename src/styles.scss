@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+// /* Application-wide Styles */
+// h1 {
+//   color: #369;
+//   font-family: Arial, Helvetica, sans-serif;
+//   font-size: 250%;
+// }
+// h2, h3 {
+//   color: #444;
+//   font-family: Arial, Helvetica, sans-serif;
+//   font-weight: lighter;
+// }
+// body {
+//   margin: 2em;
+// }
+// body, input[type="text"], button {
+//   color: #333;
+//   font-family: Cambria, Georgia;
+// }
+// /* everywhere else */
+// * {
+//   font-family: Arial, Helvetica, sans-serif;
+// }
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.about {
+  background-color: whitesmoke;
+  height: 1800px;
+  display: flex;
+}
+
+.about-title {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* allign horizontally */
+  align-items: center;
+  /* align vertically */
+  margin: 0 !important;
+  /* override ScrollMagic margin */
+}
+
+.about-pages {
+  width: 50%;
+}
+
+.about-pages .about-card {
+  height: 360px;
+  display: flex;
+  color: white;
+  a {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.about-pages .about-card .avatar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-pages .about-card .avatar img {
+  height: 360px;
+}
+
+.about-pages .about-card .portfolio {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-pages .about-card>.portfolio p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+// .about-pages .about-card:nth-child(1) {
+//   background-color: #581521;
+// }
+//
+// .about-pages .about-card:nth-child(2) {
+//   background-color: #52582e;
+// }
+//
+// .about-pages .about-card:nth-child(3) {
+//   background-color: black;
+// }
+//
+// .about-pages .about-card:nth-child(4) {
+//   background-color: #630306;
+// }
+//
+// .about-pages .about-card:nth-child(5) {
+//   background-color: #2f4763;
+// }
+
+.parallax-image {
+  background: url('assets/images/avengers.jpg');
+  padding: 50px 140px;
+}
+
+.parallax-image .p {
+  padding: 0;
+  margin: 0;
+}

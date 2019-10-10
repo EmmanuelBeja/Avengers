@@ -1,0 +1,32 @@
+/* HeroSearch private styles */
+#search-component {
+  float: right;
+  font-size: 20px!important;
+  font-weight: normal;
+
+  #search-box {
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 30px;
+    float: right;
+    color: black;
+    border-radius: 5px;
+    border-color: black;
+    padding: 5px;
+  }
+
+  ul.search-result {
+    margin-top: 40px;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      cursor: hand;
+      a {
+        color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+}

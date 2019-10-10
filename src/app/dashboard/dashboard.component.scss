@@ -1,0 +1,29 @@
+// /* DashboardComponent's private CSS styles */
+.header {
+  background: url('../../assets/images/avengers-all.jpg');
+  height: 400px;
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+  .heading {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    margin-top: 155px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: middle;
+    place-items: center;
+    height: 400px;
+  }
+  .scroll {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

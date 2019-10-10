@@ -1,0 +1,24 @@
+<div *ngIf="hero">
+  <section class="header">
+    <span>
+      <img src={{hero.image_url}} class="detail-avatar" height="400" alt="">
+    </span>
+    <span class="heading"> {{hero.name | uppercase}} </span>
+  </section>
+  <div class="form-container">
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+    <label>Image url:
+      <input [(ngModel)]="hero.image_url" placeholder="image_url"/>
+    </label>
+    <label>About
+      <input [(ngModel)]="hero.about" placeholder="about"/>
+    </label>
+    <label>Color Code:
+      <input [(ngModel)]="hero.color" placeholder="color"/>
+    </label>
+    <button (click)="goBack()" class="btn btn-back">go back</button>
+    <button (click)="save()" class="btn btn-save">save</button>
+  </div>
+</div>
